@@ -1,0 +1,46 @@
+@import "./reset"
+
+$color-primary-white: hsla( 0, 0%, 100%, 1 )
+$color-primary-gray: hsla( 0, 0%, 88%, 1 )
+$color-primary-dark-gray: hsla( 0, 0%, 55%, 1 )
+
+$font-family: "Roboto", sans-serif
+$font-family-mono: "Roboto Mono", monospace
+
+html
+	box-sizing: border-box
+
+*, *:before, *:after
+	box-sizing: inherit
+
+body
+	font-family: $font-family
+	color: $color-primary-white
+
+	#background
+		z-index: -1
+		position: fixed
+		min-width: 100%
+		min-height: 100%
+		background-image: url( "../media/san-clemente.jpg" )
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+
+	nav
+		width: 100%
+		text-align: center
+		padding: 55px
+
+		.nav-item
+			display: inline-block
+			text-transform: uppercase
+			font-size: 1.1rem
+			padding: 21px
+			cursor: pointer
+			color: $color-primary-white
+			text-decoration: none
+			transition: color 0.55s ease
+
+			&:hover
+				color: $color-primary-gray

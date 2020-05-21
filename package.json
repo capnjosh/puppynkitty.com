@@ -1,0 +1,23 @@
+{
+  "name": "puppynkitty.com",
+  "version": "1.0.0",
+  "description": "Website and other personal projects",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capnjosh/puppynkitty.com.git"
+  },
+  "author": "Joshua Tan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/capnjosh/puppynkitty.com/issues"
+  },
+  "homepage": "https://github.com/capnjosh/puppynkitty.com#readme"
+}
