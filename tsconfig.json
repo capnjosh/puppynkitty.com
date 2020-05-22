@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"outDir": "./dist/",
+		"outFile": "./dist/main.js",
 		"target": "es5",
 		"sourceMap": true,
 		"allowJs": true,
