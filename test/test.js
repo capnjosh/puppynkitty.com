@@ -25,6 +25,14 @@ describe( 'puppynkitty.com tests', () => {
 
   } )
 
+  it( 'Has a background', async () => {
+
+    await page.waitFor( '#background' );
+    let backgroundImage = await page.evaluate( 'document.getElementById( "background" ).style.backgroundImage' );
+    assert.notEqual( backgroundImage.toLowerCase().search( 'san-clemente' ), -1 )
+
+  } )
+
   it( 'Has a GitHub link', async () => {
 
     await page.waitFor( 'nav a' );
@@ -36,8 +44,8 @@ describe( 'puppynkitty.com tests', () => {
   it( 'Has a link to a google doc resume', async () => {
 
     await page.waitFor( 'nav a' );
-    let githubLink = await page.evaluate( 'document.querySelectorAll( "nav a" )[ 1 ].getAttribute( "href" )' );
-    assert.notEqual( githubLink.toLowerCase().search( 'docs.google.com' ), -1 )
+    let googleDocResume = await page.evaluate( 'document.querySelectorAll( "nav a" )[ 1 ].getAttribute( "href" )' );
+    assert.notEqual( googleDocResume.toLowerCase().search( 'docs.google.com' ), -1 )
 
   } )
 
