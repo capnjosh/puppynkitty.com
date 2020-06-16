@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "Website and other personal projects",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^8.0.1",
+    "puppeteer-core": "^4.0.0",
     "webpack": "^4.43.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
